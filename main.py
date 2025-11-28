@@ -17,7 +17,7 @@ client = OpenAI(
 
 model = "meta-llama/llama-3.3-70b-instruct"
 
-# Full tool list (same as first code)
+# Full tool list
 tools = [
     {
         "type": "function",
@@ -235,4 +235,4 @@ async def websocket_endpoint(ws: WebSocket):
 # Run server
 # ---------------------------------------------
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8001)
+    uvicorn.run(app, host="0.0.0.0", port=8000)
